@@ -1,2 +1,9 @@
 <?php
-echo '<strong>Welcome to SAE!</strong>';
+/* kloud app root */
+// ↑____ for aoi . Do Not Delete it.
+/****  load kloud framework  ***/
+define( 'DS' , DIRECTORY_SEPARATOR );
+define( 'AROOT' , dirname( __FILE__ ) . DS  );
+
+//ini_set('include_path', dirname( __FILE__ ) . DS .'_lp' ); 
+include_once( '_kloud'.DS .'tn.init.php' );
