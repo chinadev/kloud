@@ -2,7 +2,7 @@
 namespace Tonic;
 /**
  * TestResource
- * @uri /api/version/:idhash
+ * @uri /version/:idhash
  */
 class VersionResource extends Resource {
  
