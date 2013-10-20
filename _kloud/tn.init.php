@@ -20,7 +20,8 @@ include_once( CROOT . 'lib' . DS . 'core.function.php' );
 include_once( CROOT . 'config' .  DS . 'core.config.php' );
 include_once( AROOT . 'config' . DS . 'app.config.php' );
 
- print_r( $GLOBALS['config'] , 1 );
+ print_r( $GLOBALS['config'] );
+ exit;
 
 
 require_once( CROOT . 'lib' . DS . 'Tonic' . DS . 'Autoloader.php' ) ;
