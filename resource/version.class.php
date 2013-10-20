@@ -14,7 +14,7 @@ class VersionResource extends Resource {
         $response->code = Response::OK;
         
         //Open up a connection to our snippet store
-       	$data = array( 'version' => kloud_version() , 'site' => print_r( $GLOBALS['config'] , 1 ) , 'key' => $idhash , 'visit_time' => date("Y-m-d H:i:s") );
+       	$data = array( 'version' => kloud_version() , 'site' =>c('site_name'), 'key' => $idhash , 'visit_time' => date("Y-m-d H:i:s") );
  
         //Set the response body to be our encoded array.
         $response->body = json_encode($data);
