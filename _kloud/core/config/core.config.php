@@ -1,6 +1,6 @@
 <?php
 
-$GLOBALS['config']['default_controller'] = 'default';
-$GLOBALS['config']['default_action'] = 'index';
+$GLOBALS['konfig']['default_controller'] = 'default';
+$GLOBALS['konfig']['default_action'] = 'index';
 
 

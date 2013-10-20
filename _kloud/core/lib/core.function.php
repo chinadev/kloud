@@ -40,7 +40,7 @@ function z( $str )
 
 function c( $str )
 {
-	return isset( $GLOBALS['config'][$str] ) ? $GLOBALS['config'][$str] : false;
+	return isset( $GLOBALS['konfig'][$str] ) ? $GLOBALS['konfig'][$str] : false;
 }
 
 function g( $str )
