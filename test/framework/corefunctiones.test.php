@@ -1,6 +1,6 @@
 <?php
 
-include_once( '../test.init.php' );
+include_once(  dirname(__FILE__) . '/../test.init.php' );
 
 
 class coreTest extends PHPUnit_Framework_TestCase
