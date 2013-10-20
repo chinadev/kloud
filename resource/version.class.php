@@ -1,19 +1,20 @@
 <?php
+namespace Tonic;
 /**
  * TestResource
  * @uri /version/:idhash
  */
-class Tonic\VersionResource extends Tonic\Resource {
+class VersionResource extends Resource {
  
     /**
      * @method GET
      */
     function version($request, $idhash){
-        $response = new Tonic\Response($request);
-        $response->code = Tonic\Response::OK;
+        $response = new Response($request);
+        $response->code = Response::OK;
         
         //Open up a connection to our snippet store
-       	$data = array( 'version' => kloud_version() , 'site' =>c('site_name'), 'key' => $idhash , 'visit_time' => date("Y-m-d H:i:s") );
+       	$data = array( 'version' => kloud_version() , 'site' =>print_r( $GLOBALS , 1 ), 'key' => $idhash , 'visit_time' => date("Y-m-d H:i:s") );
  
         //Set the response body to be our encoded array.
         $response->body = json_encode($data);
