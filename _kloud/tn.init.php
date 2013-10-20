@@ -21,6 +21,7 @@ include_once( CROOT . 'config' .  DS . 'core.config.php' );
 include_once( AROOT . 'config' . DS . 'app.config.php' );
 
  print_r( $GLOBALS['config'] );
+ echo c('site_name');
  exit;
 
 
