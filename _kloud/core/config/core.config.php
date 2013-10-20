@@ -1,6 +1,5 @@
 <?php
 
-$GLOBALS['konfig']['default_controller'] = 'default';
-$GLOBALS['konfig']['default_action'] = 'index';
+$GLOBALS['konfig']['framework_version'] = '0.1.0';
 
 

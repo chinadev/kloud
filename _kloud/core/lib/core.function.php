@@ -2,7 +2,7 @@
 
 function kloud_version()
 {
-	return '0.1.0';
+	return c('framework_version');
 }
 
 function transcribe($aList, $aIsTopLevel = true) 
