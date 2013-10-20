@@ -15,6 +15,6 @@ class coreTest extends PHPUnit_Framework_TestCase
         $this->assertEquals( 'http%3A%2F%2Fftqq.com%2F%3Fa%3Dnew%26c%3Dbook%26m%3Ddownload' , u('http://ftqq.com/?a=new&c=book&m=download') );
         // test wintval
         $this->assertEquals( '125564454342345' , wintval('1255g6445e434d234f5'));
-        $this->assertEquals( 1  , 2 );
+        $this->assertEquals( 1  , 1 );
     }
 }
