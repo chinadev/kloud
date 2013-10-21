@@ -12,6 +12,14 @@ if( defined('SAE_APPNAME') )
 	$GLOBALS['config']['db']['db_name'] = SAE_MYSQL_DB;
 	
 }
+elseif( isset($_SERVER['KDB_NAME']) )
+{
+	$GLOBALS['config']['db']['db_host'] = $_SERVER['KDB_HOST'];
+	$GLOBALS['config']['db']['db_port'] = $_SERVER['KDB_PORT'];
+	$GLOBALS['config']['db']['db_user'] = $_SERVER['KDB_USER'];
+	$GLOBALS['config']['db']['db_password'] = $_SERVER['KDB_PASSWORD'];
+	$GLOBALS['config']['db']['db_name'] = $_SERVER['KDB_NAME'];
+}
 else
 {
 	$GLOBALS['config']['db']['db_host'] = 'localhost';
